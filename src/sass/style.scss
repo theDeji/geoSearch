@@ -1,0 +1,156 @@
+//Style the whole doc
+html {
+    box-sizing: border-box;
+}
+
+//body styles
+body {
+    background-color: rgb(206, 206, 206);
+    color: rgb(0, 0, 0);
+    font-family: Righteous;
+    padding: 20px;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+//header styles
+header {
+    text-align: center;
+    background-color: cornsilk;
+    border-radius: 5px 5px 0 0;
+}
+
+//navigation bar
+.nav {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+//the geo search logo/brand
+.brand {
+    opacity: 0.8;
+    margin-left: 4.3rem;
+    justify-self: start;
+    font-size: larger;
+}
+
+.links{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: smaller;
+    font-weight: lighter;
+    margin-right: 2rem;
+}
+
+
+//search text input styles
+input[type="text"]{
+    background-color: rgb(206, 206, 206);    
+    border: none;
+    border-bottom: 1px solid grey;
+    transition: all 0.4s ease-in-out 0s;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+input[type="text"]:hover {
+    border: none;
+    border-bottom: 2px solid grey;
+    transform: scale(1.0);
+    outline: none;
+}
+
+//search button styles
+button {
+    background-color: black;
+    border: none;
+    opacity: 0.85;
+    letter-spacing: 1px;
+    color: white;
+    font-family: Righteous;
+    font-size: 14px;
+    transition: all 0.4s ease-in-out 0s;
+    margin-left: 0.45rem;
+    border-radius: 5px 0px;
+}
+
+button:hover{
+    background-color: grey;
+    border: none;
+    transform: scale(1.3);
+    size: 50%;
+}
+
+button:focus{
+    outline: none;
+}
+
+.map-and-conditions{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+//map properties
+#map{
+    margin: 15px 20px;
+    // background-color: cadetblue;
+    height: 50vh;
+}
+
+.conditions{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.weather{
+    background-color: blueviolet;
+    height: 20vh;
+    border-radius: 5px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.wind{
+    background-color: rosybrown;
+    height: 20vh;
+    border-radius: 5px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.temp{
+    background-color: darkolivegreen;
+    height: 20vh;
+    border-radius: 5px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.humidity{
+    background-color: aquamarine;
+    height: 20vh;
+    border-radius: 5px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.share{
+    background-color: seagreen;
+    height: 20vh;
+    border-radius: 5px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.postalcode{
+    background-color: peru;
+    height: 20vh;
+    border-radius: 5px;
+    text-align: center;
+    color: whitesmoke;
+}
